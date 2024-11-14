@@ -5152,6 +5152,7 @@ pub mod storage_account_key {
     #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
     pub enum Permissions {
         Read,
+        #[serde(rename = "FULL")]
         Full,
     }
 }
